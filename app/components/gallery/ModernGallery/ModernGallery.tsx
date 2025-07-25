@@ -174,6 +174,8 @@ const ModernGallery: React.FC = () => {
                 alt={image.alt}
                 className="gallery-item-image"
                 loading="lazy"
+                decoding="async"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <div className="gallery-item-overlay">
                 <div className="gallery-item-content">

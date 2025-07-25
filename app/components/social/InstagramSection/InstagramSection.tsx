@@ -1,15 +1,33 @@
-import React from 'react';
-import { InstagramEmbed } from 'react-social-media-embed';
+import React, { useState, useEffect } from 'react';
 import { FaInstagram, FaExternalLinkAlt, FaWhatsapp } from 'react-icons/fa';
 import './InstagramSection.css';
 
 const InstagramSection: React.FC = () => {
+  const [InstagramEmbed, setInstagramEmbed] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
   // URLs dos posts do Instagram da HL Car Detail
   const instagramPosts = [
     'https://www.instagram.com/p/C51E7L4PRy6/',
     // Você pode adicionar mais URLs de posts aqui conforme necessário
     // 'https://www.instagram.com/p/OUTRO_POST_ID/',
   ];
+
+  useEffect(() => {
+    // Carregamento dinâmico do componente Instagram para evitar problemas de SSR
+    const loadInstagramEmbed = async () => {
+      try {
+        const { InstagramEmbed: InstagramEmbedComponent } = await import('react-social-media-embed');
+        setInstagramEmbed(() => InstagramEmbedComponent);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Erro ao carregar Instagram embed:', error);
+        setIsLoading(false);
+      }
+    };
+
+    loadInstagramEmbed();
+  }, []);
 
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/p/C51E7L4PRy6/?utm_source=ig_web_copy_link', '_blank');
@@ -43,16 +61,35 @@ const InstagramSection: React.FC = () => {
 
         <div className="instagram-content">
           <div className="instagram-posts">
-            {instagramPosts.map((postUrl, index) => (
-              <div key={index} className="instagram-post-wrapper">
-                <InstagramEmbed 
-                  url={postUrl}
-                  width="100%"
-                  height={540}
-                  captioned
-                />
+            {isLoading ? (
+              <div className="instagram-loading">
+                <div className="instagram-loading-spinner"></div>
+                <p>Carregando posts do Instagram...</p>
               </div>
-            ))}
+            ) : InstagramEmbed ? (
+              instagramPosts.map((postUrl, index) => (
+                <div key={index} className="instagram-post-wrapper">
+                  <InstagramEmbed 
+                    url={postUrl}
+                    width="100%"
+                    height={540}
+                    captioned
+                  />
+                </div>
+              ))
+            ) : (
+              <div className="instagram-fallback">
+                <div className="instagram-fallback-content">
+                  <FaInstagram className="instagram-fallback-icon" />
+                  <h3>Veja nossos trabalhos no Instagram</h3>
+                  <p>Acompanhe nossos resultados incríveis e novidades</p>
+                  <button className="instagram-fallback-btn" onClick={handleInstagramClick}>
+                    <FaInstagram />
+                    Ver no Instagram
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="instagram-info">
