@@ -1,87 +1,90 @@
-# Welcome to React Router!
+# HL Car Detail - Website Oficial
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Site oficial da HL Car Detail, empresa especializada em estética automotiva de luxo em Curitiba - PR.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚗 Sobre a HL Car Detail
 
-## Features
+A HL Car Detail é uma empresa especializada em estética automotiva que oferece serviços premium para cuidar do seu veículo com excelência, precisão e sofisticação.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### 📍 Localização
+- **Endereço:** Rua José de Alencar, 1550 - Cristo Rei, Curitiba - PR
+- **CEP:** 80040-070
+- **Telefone:** (41) 9 6003-0019
 
-## Getting Started
+### ⏰ Horário de Funcionamento
+- **Segunda a Sábado:** 8:00 - 18:00
+- **Domingo:** Fechado
 
-### Installation
+## 🛠️ Serviços Oferecidos
 
-Install the dependencies:
+### Lavagens
+- Lavagem Simples
+- Lavagem Completa
+- Lavagem Premium
+- Lavagem Master
 
-```bash
-npm install
-```
+### Tratamentos Premium
+- Tratamento Gold
+- Tratamento Super Gold
+- Higienização de Bancos
+- Limpeza de Motor
 
-### Development
+### Polimento e Proteção
+- Polimento Técnico
+- Proteção Cerâmica
+- Restauro de Faróis
+- Aplicação de PPF
 
-Start the development server with HMR:
+### Pacotes Especiais
+- Pacote HL Completo
+- Pacote Mensal
+- Pacote Trimestral
 
-```bash
-npm run dev
-```
+## 🌟 Características do Site
 
-Your application will be available at `http://localhost:5173`.
+### Design Moderno
+- Interface responsiva e moderna
+- Efeitos glassmorphism
+- Animações suaves
+- Design profissional inspirado em sites automotivos premium
 
-## Building for Production
+### Funcionalidades
+- **Galeria de Trabalhos:** 12 imagens reais dos serviços
+- **Integração Instagram:** Embed de posts do Instagram
+- **WhatsApp Automático:** Mensagens personalizadas por contexto
+- **Formulário de Contato:** Sistema completo de contato
+- **Mapa Interativo:** Localização com direções
+- **Tabelas de Serviços:** Interface com abas organizadas
 
-Create a production build:
+### Tecnologias Utilizadas
+- **React 19** - Framework principal
+- **React Router v7** - Roteamento
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool
+- **CSS Modules** - Estilização
+- **React Icons** - Ícones
+- **Framer Motion** - Animações
+- **React Social Media Embed** - Integração Instagram
 
-```bash
-npm run build
-```
+## 🚀 Deploy
 
-## Deployment
+O site está configurado para deploy automático no Vercel com:
+- Build otimizado
+- Imagens otimizadas
+- Performance máxima
+- SEO otimizado
 
-### Docker Deployment
+## 📱 Contato
 
-To build and run using Docker:
+- **WhatsApp:** [+55 41 9 6003-0019](https://wa.me/+554196003019)
+- **Facebook:** [HL Car Detail](https://www.facebook.com/hllavacaresteticaautomotiva/)
+- **Instagram:** [@hlcardetail](https://www.instagram.com/p/C51E7L4PRy6/)
 
-```bash
-docker build -t my-app .
+## 💳 Formas de Pagamento
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Aceitamos todos os cartões de crédito e débito!
 
 ---
 
-Built with ❤️ using React Router.
+**HL Car Detail** - Estética Automotiva de Luxo  
+*Cuidamos do seu veículo com exclusividade, precisão e sofisticação.*
