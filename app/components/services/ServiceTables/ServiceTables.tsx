@@ -47,7 +47,7 @@ const ServiceTables: React.FC = () => {
 
   const renderEssenciaisTab = () => (
     <div className="service-category">
-      <div className="service-table">
+      <div className="service-table essenciais">
         <div className="service-table-header">
           <h4 className="service-table-name">Lavagem Simples</h4>
           <p className="service-table-description">Limpeza básica completa do seu veículo</p>
@@ -79,7 +79,7 @@ const ServiceTables: React.FC = () => {
         </div>
       </div>
 
-      <div className="service-table">
+      <div className="service-table essenciais">
         <div className="service-table-header">
           <h4 className="service-table-name">Lavagem Completa</h4>
           <p className="service-table-description">Inclui cera em pasta com 60 dias de duração</p>
@@ -111,7 +111,7 @@ const ServiceTables: React.FC = () => {
         </div>
       </div>
 
-      <div className="service-table">
+      <div className="service-table essenciais">
         <div className="service-table-header">
           <h4 className="service-table-name">Lavagem Completa 2</h4>
           <p className="service-table-description">Com selante de pintura de longa duração</p>
@@ -221,7 +221,7 @@ const ServiceTables: React.FC = () => {
 
   const renderEspeciaisTab = () => (
     <div className="service-category">
-      <div className="service-table premium">
+      <div className="service-table tratamentos">
         <div className="service-table-header">
           <h4 className="service-table-name">Tratamento Gold</h4>
           <p className="service-table-description">Higienização Full + Lavagem Técnica</p>
@@ -262,7 +262,7 @@ const ServiceTables: React.FC = () => {
 
   const renderPacotesTab = () => (
     <div className="service-category">
-      <div className="service-table master">
+      <div className="service-table pacotes master">
         <div className="service-table-header">
           <h4 className="service-table-name">Pacote HL</h4>
           <p className="service-table-description">Tratamento completo + Lavagem Master</p>
@@ -316,7 +316,7 @@ const ServiceTables: React.FC = () => {
 
   const renderPolimentoTab = () => (
     <div className="service-category">
-      <div className="service-table premium">
+      <div className="service-table polimento">
         <div className="service-table-header">
           <h4 className="service-table-name">Carros Pequenos e Médios</h4>
           <p className="service-table-description">Polimento técnico com diferentes níveis de proteção</p>

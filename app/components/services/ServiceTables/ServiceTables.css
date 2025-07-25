@@ -173,7 +173,7 @@
 }
 
 .service-table-header {
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
   color: var(--color-primary);
   padding: var(--space-6);
   text-align: center;
@@ -262,7 +262,7 @@
 
 /* Premium Service Styling */
 .service-table.premium {
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-purple);
   position: relative;
 }
 
@@ -271,7 +271,7 @@
   position: absolute;
   top: var(--space-4);
   right: var(--space-4);
-  background: var(--color-blue);
+  background: var(--color-purple);
   color: var(--color-primary);
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-full);
@@ -282,7 +282,7 @@
 }
 
 .service-table.premium .service-table-header {
-  background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-blue-dark) 100%);
+  background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-purple-dark) 100%);
 }
 
 /* Master Service Styling */
@@ -309,6 +309,32 @@
 .service-table.master .service-table-header {
   background: linear-gradient(135deg, var(--color-warning) 0%, #e6ac00 100%);
   color: var(--color-dark);
+}
+
+/* Category-specific service table headers */
+.service-table.essenciais .service-table-header {
+  background: linear-gradient(135deg, var(--color-emerald) 0%, var(--color-emerald-dark) 100%);
+  color: var(--color-primary);
+}
+
+.service-table.tratamentos .service-table-header {
+  background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-teal-dark) 100%);
+  color: var(--color-primary);
+}
+
+.service-table.pacotes .service-table-header {
+  background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-amber-dark) 100%);
+  color: var(--color-dark);
+}
+
+.service-table.polimento .service-table-header {
+  background: linear-gradient(135deg, var(--color-rose) 0%, var(--color-rose-dark) 100%);
+  color: var(--color-primary);
+}
+
+.service-table.adicionais .service-table-header {
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+  color: var(--color-primary);
 }
 
 /* Additional Services Table */
