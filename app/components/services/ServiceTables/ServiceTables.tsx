@@ -429,6 +429,7 @@ const ServiceTables: React.FC = () => {
               <button
                 key={tab.id}
                 className={`services-tab ${activeTab === tab.id ? 'active' : ''}`}
+                data-category={tab.id}
                 onClick={() => setActiveTab(tab.id)}
               >
                 <IconComponent className="services-tab-icon" />
