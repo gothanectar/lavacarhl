@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://lavacarhl.vercel.app/</loc>
+    <lastmod>2025-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Images for SEO -->
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/logo-hl-car-detail.png</image:loc>
+      <image:title>HL Car Detail Logo</image:title>
+      <image:caption>Logo oficial da HL Car Detail - Estética Automotiva de Luxo</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/close-na-lavagem-cuidado-carro.jpg</image:loc>
+      <image:title>Lavagem Detalhada HL Car Detail</image:title>
+      <image:caption>Cuidado minucioso em cada detalhe do seu veículo</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/lindo-carro-no-servico-de-lavagem.jpg</image:loc>
+      <image:title>Serviço Premium HL Car Detail</image:title>
+      <image:caption>Resultado excepcional com nosso serviço premium</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/andre-tan-pRppMPh4Zho-unsplash.jpg</image:loc>
+      <image:title>Polimento Técnico</image:title>
+      <image:caption>Polimento profissional com acabamento perfeito</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/andres-leal-ze_L46_GOaw-unsplash.jpg</image:loc>
+      <image:title>Detalhamento Completo</image:title>
+      <image:caption>Higienização interna e externa completa</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/andrew-pons-Os7C4iw2rDc-unsplash.jpg</image:loc>
+      <image:title>Proteção Cerâmica</image:title>
+      <image:caption>Aplicação de coating cerâmico para proteção duradoura</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/brian-lundquist-bhRTtuNTHCE-unsplash.jpg</image:loc>
+      <image:title>Tratamento Gold</image:title>
+      <image:caption>Nosso tratamento mais completo e sofisticado</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/clement-m-Ng3xrviPrhk-unsplash.jpg</image:loc>
+      <image:title>Lavagem Master</image:title>
+      <image:caption>Resultado da lavagem master com selante</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/elly-johnson-G1WBNNhsn20-unsplash.jpg</image:loc>
+      <image:title>Cuidado Especial</image:title>
+      <image:caption>Tratamento especializado para veículos clássicos</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/eugene-chystiakov-rbXzG9aAxVA-unsplash.jpg</image:loc>
+      <image:title>Performance Care</image:title>
+      <image:caption>Cuidado especializado para carros de alta performance</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/joey-banks-YApiWyp0lqo-unsplash.jpg</image:loc>
+      <image:title>Lavagem Urbana</image:title>
+      <image:caption>Perfeito para o dia a dia da cidade</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/severin-demchuk-RYkZRwbmc1U-unsplash.jpg</image:loc>
+      <image:title>Luxo Premium</image:title>
+      <image:caption>Tratamento premium para veículos de luxo</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://lavacarhl.vercel.app/images/zulfahmi-khani-9iH_6JO7Ufs-unsplash.jpg</image:loc>
+      <image:title>Acabamento Perfeito</image:title>
+      <image:caption>Resultado final com acabamento impecável</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>
