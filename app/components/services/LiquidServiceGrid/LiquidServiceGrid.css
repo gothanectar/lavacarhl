@@ -1,0 +1,499 @@
+.liquid-services {
+  padding: var(--space-3xl) 0;
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Liquid Background Effects */
+.liquid-services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(212, 175, 55, 0.02) 0%, transparent 70%);
+  animation: liquidFloat 25s ease-in-out infinite;
+  z-index: 1;
+}
+
+.liquid-services-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Section */
+.liquid-services-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.liquid-services-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+.liquid-services-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: var(--gradient-gold);
+  border-radius: var(--radius-sm);
+}
+
+.liquid-services-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: var(--space-xl);
+}
+
+/* Address Card */
+.liquid-services-address {
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border-strong);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.liquid-services-address::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-gold-subtle);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.liquid-services-address-title {
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-sm);
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.liquid-services-address-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  font-size: 1rem;
+}
+
+.liquid-services-address-text {
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Filter Buttons */
+.liquid-services-filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+.liquid-services-filter {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--glass-bg-primary);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-services-filter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-gold-subtle);
+  transition: left var(--transition-normal);
+}
+
+.liquid-services-filter:hover::before,
+.liquid-services-filter.active::before {
+  left: 0;
+}
+
+.liquid-services-filter:hover,
+.liquid-services-filter.active {
+  color: var(--color-text-primary);
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Services Grid */
+.liquid-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+/* Service Card */
+.liquid-service-card {
+  background: var(--glass-bg-secondary);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-subtle);
+}
+
+.liquid-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-surface);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.liquid-service-card:hover::before {
+  opacity: 1;
+}
+
+.liquid-service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--glass-border-strong);
+  box-shadow: var(--shadow-strong);
+}
+
+.liquid-service-card.premium {
+  border: 2px solid var(--color-gold);
+  position: relative;
+}
+
+.liquid-service-card.premium::after {
+  content: 'PREMIUM';
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: var(--gradient-gold);
+  color: var(--color-text-dark);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+.liquid-service-card.delivery {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(39, 174, 96, 0.05) 100%);
+  border-color: rgba(46, 204, 113, 0.3);
+}
+
+/* Service Card Content */
+.liquid-service-icon {
+  font-size: 3rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-lg);
+  display: block;
+  transition: all var(--transition-normal);
+  filter: drop-shadow(0 4px 12px rgba(212, 175, 55, 0.3));
+}
+
+.liquid-service-card:hover .liquid-service-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 20px rgba(212, 175, 55, 0.4));
+}
+
+.liquid-service-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.3;
+}
+
+.liquid-service-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.liquid-service-description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
+}
+
+.liquid-service-features {
+  list-style: none;
+  margin-bottom: var(--space-lg);
+}
+
+.liquid-service-features li {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-xs);
+  position: relative;
+  padding-left: var(--space-lg);
+  line-height: 1.5;
+}
+
+.liquid-service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Service CTA */
+.liquid-service-cta {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.liquid-service-card:hover .liquid-service-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.liquid-service-cta-btn {
+  width: 100%;
+  background: var(--glass-bg-elevated);
+  border: 1px solid var(--glass-border);
+  color: var(--color-text-primary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+.liquid-service-cta-btn:hover {
+  background: var(--gradient-gold);
+  color: var(--color-text-dark);
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Highlight Section */
+.liquid-services-highlight {
+  background: var(--glass-bg-elevated);
+  backdrop-filter: blur(var(--glass-blur-strong));
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong));
+  border: 1px solid var(--glass-border-strong);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.liquid-services-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-gold-subtle);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.liquid-services-highlight-title {
+  font-size: 1.8rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.liquid-services-highlight-text {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.liquid-services-cta {
+  text-align: center;
+}
+
+.liquid-services-cta-text {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}
+
+.liquid-services-cta-buttons {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.liquid-services-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-2xl);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.liquid-services-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left var(--transition-slow);
+}
+
+.liquid-services-cta-btn:hover::before {
+  left: 100%;
+}
+
+.liquid-services-cta-btn.primary {
+  background: var(--gradient-gold);
+  color: var(--color-text-dark);
+  box-shadow: var(--shadow-gold);
+}
+
+.liquid-services-cta-btn.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold-strong);
+}
+
+.liquid-services-cta-btn.secondary {
+  background: var(--glass-bg-elevated);
+  color: var(--color-text-primary);
+  border: 2px solid var(--glass-border-strong);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+.liquid-services-cta-btn.secondary:hover {
+  background: var(--glass-bg-primary);
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .liquid-services {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .liquid-services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .liquid-service-card {
+    padding: var(--space-xl);
+  }
+  
+  .liquid-services-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .liquid-services-filter {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .liquid-services-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .liquid-services-cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .liquid-services-address {
+    padding: var(--space-lg);
+  }
+  
+  .liquid-service-card {
+    padding: var(--space-lg);
+  }
+  
+  .liquid-service-icon {
+    font-size: 2.5rem;
+  }
+}

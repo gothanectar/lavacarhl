@@ -1,0 +1,199 @@
+.glassmorphism-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glass);
+  padding: var(--spacing-xl);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.glassmorphism-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(184, 134, 11, 0.1) 0%,
+    transparent 50%,
+    rgba(184, 134, 11, 0.05) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glassmorphism-card.primary {
+  background: rgba(28, 37, 38, 0.3);
+  border: 1px solid rgba(184, 134, 11, 0.4);
+  box-shadow: 
+    var(--shadow-glass),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glassmorphism-card.secondary {
+  background: rgba(28, 37, 38, 0.2);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.glassmorphism-card.hero {
+  background: rgba(28, 37, 38, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.37),
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glassmorphism-card.hero::before {
+  background: linear-gradient(
+    135deg,
+    rgba(184, 134, 11, 0.15) 0%,
+    transparent 30%,
+    rgba(184, 134, 11, 0.08) 70%,
+    transparent 100%
+  );
+}
+
+.glassmorphism-card.interactive {
+  cursor: pointer;
+}
+
+.glassmorphism-card.interactive:hover {
+  background: rgba(28, 37, 38, 0.35);
+  border-color: rgba(184, 134, 11, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 
+    var(--shadow-glass),
+    var(--shadow-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.glassmorphism-card.compact {
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.glassmorphism-card.large {
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+}
+
+/* Content styling within glassmorphism cards */
+.glassmorphism-card h1,
+.glassmorphism-card h2,
+.glassmorphism-card h3,
+.glassmorphism-card h4,
+.glassmorphism-card h5,
+.glassmorphism-card h6 {
+  color: var(--color-text);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.glassmorphism-card p {
+  color: var(--color-text-muted);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.glassmorphism-card .text-accent {
+  color: var(--color-accent);
+  text-shadow: 0 0 10px rgba(184, 134, 11, 0.3);
+}
+
+/* Special effects for different blur levels */
+.glassmorphism-card.blur-light {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.glassmorphism-card.blur-medium {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glassmorphism-card.blur-strong {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glassmorphism-card.blur-extreme {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+/* Opacity variants */
+.glassmorphism-card.opacity-light {
+  background: rgba(28, 37, 38, 0.1);
+}
+
+.glassmorphism-card.opacity-medium {
+  background: rgba(28, 37, 38, 0.25);
+}
+
+.glassmorphism-card.opacity-strong {
+  background: rgba(28, 37, 38, 0.4);
+}
+
+/* Animation effects */
+.glassmorphism-card.animate-in {
+  animation: glassCardIn 0.6s ease forwards;
+}
+
+@keyframes glassCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .glassmorphism-card {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  .glassmorphism-card.large {
+    padding: var(--spacing-xl);
+  }
+  
+  .glassmorphism-card.compact {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+  .glassmorphism-card {
+    background: rgba(28, 37, 38, 0.8);
+  }
+  
+  .glassmorphism-card.primary {
+    background: rgba(28, 37, 38, 0.9);
+  }
+  
+  .glassmorphism-card.secondary {
+    background: rgba(28, 37, 38, 0.7);
+  }
+  
+  .glassmorphism-card.hero {
+    background: rgba(28, 37, 38, 0.6);
+  }
+}

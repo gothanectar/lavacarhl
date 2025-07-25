@@ -25,10 +25,12 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HL Car Detail - Estética Automotiva de Luxo</title>
+        <meta name="description" content="Estética automotiva de luxo em Curitiba. Lavagem premium, polimento, proteção cerâmica e muito mais. Cuidamos do seu veículo com exclusividade." />
         <Meta />
         <Links />
       </head>
