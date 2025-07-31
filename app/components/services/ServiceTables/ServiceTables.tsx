@@ -96,15 +96,15 @@ const ServiceTables: React.FC = () => {
             <div className="service-pricing">
               <div className="service-price">
                 <div className="service-price-label">Pequeno</div>
-                <div className="service-price-value">R$ 80</div>
-              </div>
-              <div className="service-price">
-                <div className="service-price-label">Médio</div>
                 <div className="service-price-value">R$ 90</div>
               </div>
               <div className="service-price">
-                <div className="service-price-label">Grande</div>
+                <div className="service-price-label">Médio</div>
                 <div className="service-price-value">R$ 100</div>
+              </div>
+              <div className="service-price">
+                <div className="service-price-label">Grande</div>
+                <div className="service-price-value">R$ 110</div>
               </div>
             </div>
           </div>
@@ -128,15 +128,15 @@ const ServiceTables: React.FC = () => {
             <div className="service-pricing">
               <div className="service-price">
                 <div className="service-price-label">Pequeno</div>
-                <div className="service-price-value">R$ 90</div>
-              </div>
-              <div className="service-price">
-                <div className="service-price-label">Médio</div>
                 <div className="service-price-value">R$ 100</div>
               </div>
               <div className="service-price">
-                <div className="service-price-label">Grande</div>
+                <div className="service-price-label">Médio</div>
                 <div className="service-price-value">R$ 110</div>
+              </div>
+              <div className="service-price">
+                <div className="service-price-label">Grande</div>
+                <div className="service-price-value">R$ 130</div>
               </div>
             </div>
           </div>

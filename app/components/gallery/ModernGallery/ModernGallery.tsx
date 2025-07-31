@@ -88,6 +88,14 @@ const ModernGallery: React.FC = () => {
       title: 'Acabamento Perfeito',
       description: 'Resultado final com acabamento impecável',
       category: 'polimento'
+    },
+    {
+      id: '9',
+      src: '/images/detalhamento.jpg',
+      alt: 'Detalhamento especializado HL Car Detail',
+      title: 'Detalhamento Especializado',
+      description: 'Serviço completo de detalhamento interno e externo',
+      category: 'detalhamento'
     }
   ];
 

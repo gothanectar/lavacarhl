@@ -24,10 +24,44 @@
 
 /* Gallery Grid */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
+  display: flex;
+  gap: var(--space-4);
   margin-bottom: var(--space-12);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-orange) var(--color-gray-200);
+  padding-bottom: var(--space-2);
+}
+
+.gallery-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+  background: var(--color-gray-200);
+  border-radius: var(--radius-full);
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: var(--color-orange);
+  border-radius: var(--radius-full);
+}
+
+.gallery-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange-dark);
+}
+
+/* Desktop: Switch to Grid */
+@media (min-width: 768px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
 }
 
 .gallery-item {
@@ -38,6 +72,16 @@
   aspect-ratio: 4/3;
   cursor: pointer;
   transition: all var(--duration-300) var(--ease-in-out);
+  flex: 0 0 280px;
+  min-width: 280px;
+}
+
+/* Desktop: Remove flex constraints */
+@media (min-width: 768px) {
+  .gallery-item {
+    flex: none;
+    min-width: auto;
+  }
 }
 
 .gallery-item:hover {
