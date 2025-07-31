@@ -115,7 +115,8 @@ const ModernLocation: React.FC = () => {
                 <h3 className="location-card-title">Horário de Funcionamento</h3>
               </div>
               <div className="location-card-content">
-                <p><strong>Segunda a Sábado:</strong> 8:00 - 16:00</p>
+                <p><strong>Segunda a Sexta:</strong> 8:00 - 18:00</p>
+                <p><strong>Sábado:</strong> 8:00 - 16:00</p>
                 <p><strong>Domingo:</strong> Fechado</p>
                 <p style={{ marginTop: 'var(--space-4)', color: 'var(--color-blue)', fontWeight: '600' }}>
                   Aceitamos todos os cartões de crédito e débito!

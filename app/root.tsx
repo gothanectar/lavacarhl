@@ -82,7 +82,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               "longitude": -49.2733
             },
             "openingHours": [
-              "Mo-Sa 08:00-16:00"
+              "Mo-Fr 08:00-18:00",
+              "Sa 08:00-16:00"
             ],
             "priceRange": "$$",
             "image": "https://lavacarhl.vercel.app/images/logo-hl-car-detail.png",
