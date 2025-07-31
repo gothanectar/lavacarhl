@@ -324,7 +324,7 @@ const ServiceTables: React.FC = () => {
         <div className="service-table-body">
           <div className="service-table-content">
             <ul className="service-features">
-              <li>Polimento Técnico + Selante MOTHERS CMX - R$ 990 (6 meses)</li>
+              <li>Polimento Técnico + Selante MOTHERS CMX - R$ 650 (6 meses)</li>
               <li>Polimento Técnico + Revestimento Cerâmico - R$ 1.500 (12 meses)</li>
               <li>Polimento Técnico + Revestimento Cerâmico - R$ 2.500 (36 meses)</li>
               <li>Camada Adicional de Coating Cerâmico - R$ 500</li>
@@ -332,7 +332,7 @@ const ServiceTables: React.FC = () => {
             <div className="service-pricing">
               <div className="service-price">
                 <div className="service-price-label">A partir de</div>
-                <div className="service-price-value">R$ 990</div>
+                <div className="service-price-value">R$ 650</div>
               </div>
             </div>
           </div>

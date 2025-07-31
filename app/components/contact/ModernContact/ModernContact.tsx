@@ -304,7 +304,7 @@ const ModernContact: React.FC = () => {
                 <ul className="contact-info-list">
                   <li className="contact-info-item">
                     <FaClock className="contact-info-item-icon" />
-                    <span>Segunda a Sábado: 8:00 - 18:00</span>
+                    <span>Segunda a Sábado: 8:00 - 16:00</span>
                   </li>
                   <li className="contact-info-item">
                     <FaClock className="contact-info-item-icon" />

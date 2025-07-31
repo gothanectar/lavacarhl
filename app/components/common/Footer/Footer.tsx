@@ -103,7 +103,7 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Informações</h3>
             <p>Horário de Funcionamento:</p>
-            <p>Segunda a Sábado<br />8:00 - 18:00</p>
+            <p>Segunda a Sábado<br />8:00 - 16:00</p>
             <p style={{ marginTop: 'var(--spacing-md)' }}>
               <strong>Aceitamos todos os cartões!</strong>
             </p>

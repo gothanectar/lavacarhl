@@ -68,7 +68,7 @@ const AutomotiveHero: React.FC = () => {
                 <span className="automotive-hero-stat-label">Clientes Satisfeitos</span>
               </div>
               <div className="automotive-hero-stat">
-                <span className="automotive-hero-stat-number">5+</span>
+                <span className="automotive-hero-stat-number">12+</span>
                 <span className="automotive-hero-stat-label">Anos de Experiência</span>
               </div>
               <div className="automotive-hero-stat">
