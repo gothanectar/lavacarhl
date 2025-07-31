@@ -42,7 +42,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a 
-                href="https://wa.me/+554196003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20estética%20automotiva.%20Podem%20me%20ajudar?" 
+                href="https://wa.me/+5541996003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20de%20estética%20automotiva.%20Podem%20me%20ajudar?" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
@@ -76,11 +76,11 @@ const Footer = () => {
               </div>
               <div className="contact-item">
                 <FaPhone className="contact-icon" />
-                <a href="tel:+554196003019">(41) 9 6003-0019</a>
+                <a href="tel:+5541996003019">(41) 99603-3019</a>
               </div>
               <div className="contact-item">
                 <FaWhatsapp className="contact-icon" />
-                <a href="https://wa.me/+554196003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20os%20serviços.%20Vocês%20podem%20me%20atender?" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/+5541996003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20os%20serviços.%20Vocês%20podem%20me%20atender?" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
               </div>

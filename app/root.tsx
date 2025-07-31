@@ -36,7 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         
         {/* SEO Meta Tags */}
         <title>HL Car Detail - Estética Automotiva de Luxo em Curitiba | Lavagem Premium</title>
-        <meta name="description" content="HL Car Detail: Estética automotiva de luxo em Curitiba. Lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo. Rua José de Alencar, 1550 - Cristo Rei. (41) 9 6003-0019" />
+        <meta name="description" content="HL Car Detail: Estética automotiva de luxo em Curitiba. Lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo. Rua José de Alencar, 1550 - Cristo Rei. (41) 99603-3019" />
         <meta name="keywords" content="estética automotiva, lavagem de carro, polimento, proteção cerâmica, detalhamento automotivo, Curitiba, Cristo Rei, lavagem premium, carro limpo, HL Car Detail" />
         <meta name="author" content="HL Car Detail" />
         <meta name="robots" content="index, follow" />
@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             "name": "HL Car Detail",
             "description": "Estética automotiva de luxo especializada em lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo",
             "url": "https://lavacarhl.vercel.app",
-            "telephone": "+55-41-99603-0019",
+            "telephone": "+55-41-996003019",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Rua José de Alencar, 1550",
@@ -91,7 +91,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             "sameAs": [
               "https://www.facebook.com/hllavacaresteticaautomotiva/",
               "https://www.instagram.com/p/C51E7L4PRy6/",
-              "https://wa.me/+554196003019"
+              "https://wa.me/+5541996003019"
             ],
             "serviceArea": {
               "@type": "City",

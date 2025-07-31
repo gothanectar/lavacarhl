@@ -185,19 +185,19 @@ const LiquidServiceGrid: React.FC = () => {
 
     const handleWhatsAppContact = () => {
         const message = 'Olá! Vim através do site da HL Car Detail e gostaria de saber mais sobre os serviços de estética automotiva.';
-        const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
     const handleScheduleService = () => {
         const message = 'Olá! Vim através do site da HL Car Detail e gostaria de agendar um serviço. Por favor, me informe as opções e horários disponíveis. 😊';
-        const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
     const handleServiceClick = (service: Service) => {
         const message = `Olá! Vim através do site da HL Car Detail e gostaria de saber mais sobre o serviço: ${service.title}`;
-        const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 

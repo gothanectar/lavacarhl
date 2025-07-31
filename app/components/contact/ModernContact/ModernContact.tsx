@@ -108,13 +108,13 @@ const ModernContact: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de conversar sobre os serviços de estética automotiva. Vocês podem me atender agora?';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleScheduleClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de agendar um serviço de estética automotiva. Podem me informar os horários disponíveis e valores?';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -254,11 +254,11 @@ const ModernContact: React.FC = () => {
                 <ul className="contact-info-list">
                   <li className="contact-info-item">
                     <FaPhone className="contact-info-item-icon" />
-                    <a href="tel:+554196003019">(41) 9 6003-0019</a>
+                    <a href="tel:+5541996003019">(41) 99603-3019</a>
                   </li>
                   <li className="contact-info-item">
                     <FaWhatsapp className="contact-info-item-icon" />
-                    <a href="https://wa.me/+554196003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20falar%20diretamente%20com%20vocês.%20Podem%20me%20atender?" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/+5541996003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20falar%20diretamente%20com%20vocês.%20Podem%20me%20atender?" target="_blank" rel="noopener noreferrer">
                       WhatsApp
                     </a>
                   </li>
@@ -274,7 +274,7 @@ const ModernContact: React.FC = () => {
                     <FaFacebook />
                   </a>
                   <a 
-                    href="https://wa.me/+554196003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20conversar%20com%20vocês%20sobre%20os%20serviços.%20Estão%20disponíveis?" 
+                    href="https://wa.me/+5541996003019?text=Olá!%20Vim%20através%20do%20site%20da%20HL%20Car%20Detail%20e%20gostaria%20de%20conversar%20com%20vocês%20sobre%20os%20serviços.%20Estão%20disponíveis?" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="social-link whatsapp"

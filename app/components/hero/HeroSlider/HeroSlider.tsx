@@ -61,7 +61,7 @@ const defaultSlides: SlideData[] = [
     cta: {
       text: 'Agendar Serviço',
       action: () => {
-        window.open('https://wa.me/+554196003019?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20HL%20Car%20Detail.', '_blank');
+        window.open('https://wa.me/+5541996003019?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20HL%20Car%20Detail.', '_blank');
       }
     }
   },
@@ -74,7 +74,7 @@ const defaultSlides: SlideData[] = [
     cta: {
       text: 'Solicitar Delivery',
       action: () => {
-        window.open('https://wa.me/+554196003019?text=Olá!%20Gostaria%20de%20solicitar%20o%20serviço%20delivery.', '_blank');
+        window.open('https://wa.me/+5541996003019?text=Olá!%20Gostaria%20de%20solicitar%20o%20serviço%20delivery.', '_blank');
       }
     }
   }

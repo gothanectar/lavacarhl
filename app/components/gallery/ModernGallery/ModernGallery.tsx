@@ -105,13 +105,13 @@ const ModernGallery: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e fiquei impressionado com os trabalhos na galeria. Gostaria de saber mais sobre os serviços.';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleScheduleClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de agendar um serviço após ver os resultados na galeria.';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

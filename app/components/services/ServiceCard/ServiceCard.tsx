@@ -43,7 +43,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const handleCtaClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     const message = `Olá! Gostaria de saber mais sobre o serviço: ${title}`;
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

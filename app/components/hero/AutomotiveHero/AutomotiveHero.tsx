@@ -6,13 +6,13 @@ import './AutomotiveHero.css';
 const AutomotiveHero: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de conhecer os serviços de estética automotiva premium. Poderia me enviar mais informações?';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleScheduleClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de agendar um serviço. Por favor, me informe as opções disponíveis e horários. Obrigado!';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

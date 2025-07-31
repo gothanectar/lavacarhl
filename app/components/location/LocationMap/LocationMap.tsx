@@ -32,12 +32,12 @@ const LocationMap: React.FC = () => {
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+554196003019';
+    window.location.href = 'tel:+5541996003019';
   };
 
   const handleWhatsApp = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de saber como chegar até vocês.';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -170,10 +170,10 @@ const LocationMap: React.FC = () => {
                   <div className="location-detail-item">
                     <FaPhone className="location-detail-icon" />
                     <a 
-                      href="tel:+554196003019" 
+                      href="tel:+5541996003019" 
                       className="location-detail-link"
                     >
-                      (41) 9 6003-0019
+                      (41) 99603-3019
                     </a>
                   </div>
                 </div>

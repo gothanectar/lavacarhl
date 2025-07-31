@@ -133,7 +133,7 @@ const ContactForm: React.FC = () => {
 
   const handleWhatsAppContact = () => {
     const message = `Olá! Meu nome é ${formData.name || '[Nome]'}. Gostaria de mais informações sobre os serviços da HL Car Detail.`;
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -268,14 +268,14 @@ const ContactForm: React.FC = () => {
               </h3>
               <div className="contact-info-item">
                 <FaPhone className="contact-info-item-icon" />
-                <a href="tel:+554196003019" className="contact-info-link">
-                  (41) 9 6003-0019
+                <a href="tel:+5541996003019" className="contact-info-link">
+                  (41) 99603-3019
                 </a>
               </div>
               <div className="contact-info-item">
                 <FaWhatsapp className="contact-info-item-icon" />
                 <a 
-                  href="https://wa.me/+554196003019" 
+                  href="https://wa.me/+5541996003019" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="contact-info-link"
@@ -294,7 +294,7 @@ const ContactForm: React.FC = () => {
                   <FaFacebook />
                 </a>
                 <a 
-                  href="https://wa.me/+554196003019" 
+                  href="https://wa.me/+5541996003019" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="social-link"

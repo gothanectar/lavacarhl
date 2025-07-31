@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de saber mais sobre os serviços.';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -97,11 +97,11 @@ const Header: React.FC = () => {
           {/* Contact Info */}
           <div className="header-contact">
             <a
-              href="tel:+554196003019"
+              href="tel:+5541996003019"
               className="header-phone"
             >
               <FaPhone className="header-phone-icon" />
-              (41) 9 6003-0019
+              (41) 99603-3019
             </a>
           </div>
 
@@ -148,11 +148,11 @@ const Header: React.FC = () => {
 
             <div className="header-mobile-contact">
               <a
-                href="tel:+554196003019"
+                href="tel:+5541996003019"
                 className="header-mobile-phone"
               >
                 <FaPhone />
-                (41) 9 6003-0019
+                (41) 99603-3019
               </a>
 
               <button

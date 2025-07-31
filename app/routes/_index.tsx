@@ -15,7 +15,7 @@ export const meta: Route.MetaFunction = () => {
     { title: "HL Car Detail - Estética Automotiva de Luxo em Curitiba | Lavagem Premium" },
     { 
       name: "description", 
-      content: "HL Car Detail: Estética automotiva de luxo em Curitiba. Lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo. Rua José de Alencar, 1550 - Cristo Rei. (41) 9 6003-0019" 
+      content: "HL Car Detail: Estética automotiva de luxo em Curitiba. Lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo. Rua José de Alencar, 1550 - Cristo Rei. (41) 99603-3019" 
     },
     { 
       name: "keywords", 

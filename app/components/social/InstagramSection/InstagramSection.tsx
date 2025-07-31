@@ -35,7 +35,7 @@ const InstagramSection: React.FC = () => {
 
   const handleWhatsAppFromInstagram = () => {
     const message = 'Olá! Vi vocês no Instagram e fiquei interessado nos serviços da HL Car Detail. Podem me passar mais informações?';
-    const whatsappUrl = `https://wa.me/+554196003019?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+5541996003019?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
