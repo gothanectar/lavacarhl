@@ -9,7 +9,7 @@ A HL Car Detail é uma empresa especializada em estética automotiva que oferece
 ### 📍 Localização
 - **Endereço:** Rua José de Alencar, 1550 - Cristo Rei, Curitiba - PR
 - **CEP:** 80040-070
-- **Telefone:** (41) 9 6003-0019
+- **Telefone:** (41) 9 9603-0019
 
 ### ⏰ Horário de Funcionamento
 - **Segunda a Sábado:** 8:00 - 18:00
@@ -76,7 +76,7 @@ O site está configurado para deploy automático no Vercel com:
 
 ## 📱 Contato
 
-- **WhatsApp:** [+55 41 9 6003-0019](https://wa.me/+554196003019)
+- **WhatsApp:** [+55 41 9 9603-0019](https://wa.me/+554199603019)
 - **Facebook:** [HL Car Detail](https://www.facebook.com/hllavacaresteticaautomotiva/)
 - **Instagram:** [@hlcardetail](https://www.instagram.com/p/C51E7L4PRy6/)
 

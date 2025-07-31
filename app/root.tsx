@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             "name": "HL Car Detail",
             "description": "Estética automotiva de luxo especializada em lavagem premium, polimento técnico, proteção cerâmica e detalhamento completo",
             "url": "https://lavacarhl.vercel.app",
-            "telephone": "+55-41-96003-0019",
+            "telephone": "+55-41-99603-0019",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Rua José de Alencar, 1550",
