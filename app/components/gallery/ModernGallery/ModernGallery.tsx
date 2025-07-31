@@ -26,97 +26,65 @@ const ModernGallery: React.FC = () => {
   const galleryImages: GalleryImage[] = [
     {
       id: '1',
-      src: '/images/close-na-lavagem-cuidado-carro.jpg',
-      alt: 'Close na lavagem e cuidado do carro',
-      title: 'Lavagem Detalhada',
-      description: 'Cuidado minucioso em cada detalhe do seu veículo',
+      src: '/images/IMG_0030.jpg',
+      alt: 'Trabalho realizado pela HL Car Detail',
+      title: 'Lavagem Premium',
+      description: 'Resultado excepcional dos nossos serviços de lavagem premium',
       category: 'lavagem',
       featured: true
     },
     {
       id: '2',
-      src: '/images/lindo-carro-no-servico-de-lavagem.jpg',
-      alt: 'Lindo carro no serviço de lavagem',
-      title: 'Serviço Premium',
-      description: 'Resultado excepcional com nosso serviço premium',
-      category: 'lavagem'
+      src: '/images/IMG_0043.jpg',
+      alt: 'Serviço de detalhamento HL Car Detail',
+      title: 'Detalhamento Completo',
+      description: 'Cuidado minucioso em cada detalhe do seu veículo',
+      category: 'detalhamento'
     },
     {
       id: '3',
-      src: '/images/andre-tan-pRppMPh4Zho-unsplash.jpg',
-      alt: 'Carro esportivo após polimento',
+      src: '/images/IMG_0099.jpg',
+      alt: 'Polimento técnico HL Car Detail',
       title: 'Polimento Técnico',
       description: 'Polimento profissional com acabamento perfeito',
       category: 'polimento'
     },
     {
       id: '4',
-      src: '/images/andres-leal-ze_L46_GOaw-unsplash.jpg',
-      alt: 'Carro de luxo detalhado',
-      title: 'Detalhamento Completo',
-      description: 'Higienização interna e externa completa',
-      category: 'detalhamento'
-    },
-    {
-      id: '5',
-      src: '/images/andrew-pons-Os7C4iw2rDc-unsplash.jpg',
-      alt: 'Carro clássico restaurado',
+      src: '/images/IMG_0139.jpg',
+      alt: 'Proteção cerâmica aplicada pela HL Car Detail',
       title: 'Proteção Cerâmica',
       description: 'Aplicação de coating cerâmico para proteção duradoura',
       category: 'ceramica'
     },
     {
-      id: '6',
-      src: '/images/brian-lundquist-bhRTtuNTHCE-unsplash.jpg',
-      alt: 'Carro moderno após tratamento',
+      id: '5',
+      src: '/images/IMG_0161.jpg',
+      alt: 'Tratamento Gold HL Car Detail',
       title: 'Tratamento Gold',
       description: 'Nosso tratamento mais completo e sofisticado',
       category: 'detalhamento'
     },
     {
-      id: '7',
-      src: '/images/clement-m-Ng3xrviPrhk-unsplash.jpg',
-      alt: 'Carro esportivo brilhante',
+      id: '6',
+      src: '/images/IMG_0242.jpg',
+      alt: 'Lavagem Master HL Car Detail',
       title: 'Lavagem Master',
       description: 'Resultado da lavagem master com selante',
       category: 'lavagem'
     },
     {
-      id: '8',
-      src: '/images/elly-johnson-G1WBNNhsn20-unsplash.jpg',
-      alt: 'Carro vintage cuidado',
+      id: '7',
+      src: '/images/IMG_0247.jpg',
+      alt: 'Serviço especializado HL Car Detail',
       title: 'Cuidado Especial',
-      description: 'Tratamento especializado para veículos clássicos',
+      description: 'Tratamento especializado para cada tipo de veículo',
       category: 'detalhamento'
     },
     {
-      id: '9',
-      src: '/images/eugene-chystiakov-rbXzG9aAxVA-unsplash.jpg',
-      alt: 'Carro de alta performance',
-      title: 'Performance Care',
-      description: 'Cuidado especializado para carros de alta performance',
-      category: 'polimento'
-    },
-    {
-      id: '10',
-      src: '/images/joey-banks-YApiWyp0lqo-unsplash.jpg',
-      alt: 'Carro urbano moderno',
-      title: 'Lavagem Urbana',
-      description: 'Perfeito para o dia a dia da cidade',
-      category: 'lavagem'
-    },
-    {
-      id: '11',
-      src: '/images/severin-demchuk-RYkZRwbmc1U-unsplash.jpg',
-      alt: 'Carro de luxo premium',
-      title: 'Luxo Premium',
-      description: 'Tratamento premium para veículos de luxo',
-      category: 'ceramica'
-    },
-    {
-      id: '12',
-      src: '/images/zulfahmi-khani-9iH_6JO7Ufs-unsplash.jpg',
-      alt: 'Carro esportivo finalizado',
+      id: '8',
+      src: '/images/IMG_0248.jpg',
+      alt: 'Acabamento perfeito HL Car Detail',
       title: 'Acabamento Perfeito',
       description: 'Resultado final com acabamento impecável',
       category: 'polimento'
