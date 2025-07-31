@@ -324,7 +324,8 @@ const ServiceTables: React.FC = () => {
         <div className="service-table-body">
           <div className="service-table-content">
             <ul className="service-features">
-              <li>Polimento Técnico + Selante MOTHERS CMX - R$ 650 (6 meses)</li>
+              <li>Polimento Técnico Profissional</li>
+              <li>Selante MOTHERS CMX (Duração: 6 meses)</li>
               <li>Polimento Técnico + Revestimento Cerâmico - R$ 1.500 (12 meses)</li>
               <li>Polimento Técnico + Revestimento Cerâmico - R$ 2.500 (36 meses)</li>
               <li>Camada Adicional de Coating Cerâmico - R$ 500</li>
