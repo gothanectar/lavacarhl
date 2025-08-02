@@ -29,7 +29,7 @@ const AutomotiveHero: React.FC = () => {
           <div className="automotive-hero-text">
             <div className="automotive-hero-badge">
               <FaStar />
-              Desde 2019 • Curitiba - PR
+              Desde 2017 • Curitiba - PR
             </div>
             
             <h1 className="automotive-hero-title">
@@ -81,7 +81,7 @@ const AutomotiveHero: React.FC = () => {
           {/* Right Content - Image */}
           <div className="automotive-hero-visual">
             <img
-              src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/images/imagem-principal.jpg"
               alt="Carro de luxo - HL Car Detail"
               className="automotive-hero-image"
             />
