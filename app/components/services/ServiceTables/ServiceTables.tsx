@@ -49,38 +49,6 @@ const ServiceTables: React.FC = () => {
     <div className="service-category">
       <div className="service-table essenciais">
         <div className="service-table-header">
-          <h4 className="service-table-name">Lavagem Simples</h4>
-          <p className="service-table-description">Limpeza básica completa do seu veículo</p>
-        </div>
-        <div className="service-table-body">
-          <div className="service-table-content">
-            <ul className="service-features">
-              <li>Lavagem Externa (com Shampoo Automotivo)</li>
-              <li>Limpeza de Painel + Entradas de Portas (Forrações)</li>
-              <li>Aspiração completa (Remoção de Pelos sob consulta)</li>
-              <li>Limpeza dos Vidros</li>
-              <li>Pretinho dos Pneus</li>
-            </ul>
-            <div className="service-pricing">
-              <div className="service-price">
-                <div className="service-price-label">Pequeno</div>
-                <div className="service-price-value">R$ 60</div>
-              </div>
-              <div className="service-price">
-                <div className="service-price-label">Médio</div>
-                <div className="service-price-value">R$ 70</div>
-              </div>
-              <div className="service-price">
-                <div className="service-price-label">Grande</div>
-                <div className="service-price-value">R$ 80</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="service-table essenciais">
-        <div className="service-table-header">
           <h4 className="service-table-name">Lavagem Completa</h4>
           <p className="service-table-description">Inclui cera em pasta com 60 dias de duração</p>
         </div>

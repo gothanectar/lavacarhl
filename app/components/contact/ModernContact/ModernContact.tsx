@@ -34,8 +34,8 @@ const ModernContact: React.FC = () => {
   const [errors, setErrors] = useState<Partial<FormData>>({});
 
   const services = [
-    'Lavagem Simples',
     'Lavagem Completa',
+    'Lavagem Completa 2',
     'Lavagem Premium',
     'Lavagem Master',
     'Tratamento Gold',

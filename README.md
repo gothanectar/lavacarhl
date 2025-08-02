@@ -18,8 +18,8 @@ A HL Car Detail é uma empresa especializada em estética automotiva que oferece
 ## 🛠️ Serviços Oferecidos
 
 ### Lavagens
-- Lavagem Simples
 - Lavagem Completa
+- Lavagem Completa 2
 - Lavagem Premium
 - Lavagem Master
 
