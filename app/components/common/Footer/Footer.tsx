@@ -38,6 +38,18 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-link"
                 aria-label="Facebook"
+                style={{ 
+                  color: '#1877F2',
+                  transition: 'color 0.3s ease, transform 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = '#166FE5';
+                  e.target.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = '#1877F2';
+                  e.target.style.transform = 'scale(1)';
+                }}
               >
                 <FaFacebook />
               </a>
@@ -47,6 +59,18 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-link"
                 aria-label="WhatsApp"
+                style={{ 
+                  color: '#25D366',
+                  transition: 'color 0.3s ease, transform 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = '#20BA5A';
+                  e.target.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = '#25D366';
+                  e.target.style.transform = 'scale(1)';
+                }}
               >
                 <FaWhatsapp />
               </a>
@@ -56,6 +80,18 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="social-link"
                 aria-label="Instagram"
+                style={{ 
+                  color: '#E4405F',
+                  transition: 'color 0.3s ease, transform 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = '#C13584';
+                  e.target.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = '#E4405F';
+                  e.target.style.transform = 'scale(1)';
+                }}
               >
                 <FaInstagram />
               </a>
