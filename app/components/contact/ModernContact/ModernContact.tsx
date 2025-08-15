@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   FaPhone, 
   FaWhatsapp, 
@@ -6,105 +6,12 @@ import {
   FaClock, 
   FaFacebook, 
   FaInstagram,
-  FaEnvelope,
   FaCalendarAlt,
   FaCreditCard
 } from 'react-icons/fa';
 import './ModernContact.css';
 
-interface FormData {
-  name: string;
-  email: string;
-  phone: string;
-  service: string;
-  message: string;
-}
-
 const ModernContact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Partial<FormData>>({});
-
-  const services = [
-    'Lavagem Completa',
-    'Lavagem Completa 2',
-    'Lavagem Premium',
-    'Lavagem Master',
-    'Tratamento Gold',
-    'Polimento',
-    'Proteção Cerâmica',
-    'Pacote HL',
-    'Outro'
-  ];
-
-  const validateForm = (): boolean => {
-    const newErrors: Partial<FormData> = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'Nome é obrigatório';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'E-mail é obrigatório';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'E-mail inválido';
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Telefone é obrigatório';
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = 'Mensagem é obrigatória';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
-    // Clear error when user starts typing
-    if (errors[name as keyof FormData]) {
-      setErrors(prev => ({ ...prev, [name]: undefined }));
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) return;
-
-    setIsSubmitting(true);
-
-    try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const handleWhatsAppClick = () => {
     const message = 'Olá! Vim através do site da HL Car Detail e gostaria de conversar sobre os serviços de estética automotiva. Vocês podem me atender agora?';
@@ -129,102 +36,6 @@ const ModernContact: React.FC = () => {
         </div>
 
         <div className="contact-content">
-          {/* Contact Form */}
-          <div className="contact-form-section">
-            <h3 className="contact-form-title">Envie sua Mensagem</h3>
-            <p className="contact-form-description">
-              Preencha o formulário abaixo e entraremos em contato em breve
-            </p>
-
-            {isSubmitted && (
-              <div className="form-success">
-                ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
-              </div>
-            )}
-
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name" className="form-label">Nome *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="form-input"
-                  placeholder="Seu nome completo"
-                />
-                {errors.name && <span className="form-error">{errors.name}</span>}
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email" className="form-label">E-mail *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="form-input"
-                  placeholder="seu@email.com"
-                />
-                {errors.email && <span className="form-error">{errors.email}</span>}
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="phone" className="form-label">Telefone *</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="form-input"
-                  placeholder="(11) 99999-9999"
-                />
-                {errors.phone && <span className="form-error">{errors.phone}</span>}
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="service" className="form-label">Serviço de Interesse</label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleInputChange}
-                  className="form-select"
-                >
-                  <option value="">Selecione um serviço</option>
-                  {services.map(service => (
-                    <option key={service} value={service}>{service}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message" className="form-label">Mensagem *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  className="form-textarea"
-                  placeholder="Descreva como podemos ajudá-lo..."
-                />
-                {errors.message && <span className="form-error">{errors.message}</span>}
-              </div>
-
-              <button
-                type="submit"
-                className="form-submit"
-                disabled={isSubmitting}
-              >
-                <FaEnvelope />
-                {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
-              </button>
-            </form>
-          </div>
-
           {/* Contact Info */}
           <div className="contact-info-section">
             <div className="contact-info-card">
