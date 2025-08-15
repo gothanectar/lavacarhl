@@ -119,7 +119,14 @@ const Footer = () => {
               href="https://react-portfolio-hazel-eta.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ color: 'var(--color-gold)', textDecoration: 'none' }}
+              style={{ 
+                color: '#D4AF37', 
+                textDecoration: 'none', 
+                fontWeight: 'bold',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#FFD700'}
+              onMouseLeave={(e) => e.target.style.color = '#D4AF37'}
             >
               Gothanectar
             </a>
