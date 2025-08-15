@@ -113,6 +113,17 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>© {currentYear} HL Car Detail. Todos os direitos reservados.</p>
+          <p>
+            Desenvolvido by{' '}
+            <a 
+              href="https://react-portfolio-hazel-eta.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ color: 'var(--color-gold)', textDecoration: 'none' }}
+            >
+              Gothanectar
+            </a>
+          </p>
         </div>
       </div>
     </footer>
